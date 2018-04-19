@@ -7,10 +7,17 @@
 
     <name>IM</name>
     <description>First try for IM</description>
-	
+	<platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/*">
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    </config-file>
+	</platform>
+
 	<plugin name="cordova-plugin-device" spec="~1.1.4" />
 	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
-<plugin name="cordova-plugin-geolocation" version="2.1.0" />
-	    <plugin name="cordova-plugin-whitelist" spec="1" />
+	<plugin name="cordova-plugin-geolocation" version="2.1.0" />
+	<plugin name="cordova-plugin-whitelist" spec="1" />
 
 </widget>
