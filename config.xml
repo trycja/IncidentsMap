@@ -2,11 +2,7 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
 	    xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-<<<<<<< HEAD
-		id          = "gui"
-=======
 		id          = "im"
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
         version     = "1.0.0" >
 
     <name>IM</name>
