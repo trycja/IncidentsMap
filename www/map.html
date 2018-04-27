@@ -10,18 +10,41 @@ function getLocation(){
 function onSuccess(position) {
     var lat=position.coords.latitude;
     var lang=position.coords.longitude;
-
     //Google Maps
     var myLatlng = new google.maps.LatLng(lat,lang);
-    var mapOptions = {zoom: 4,center: myLatlng}
+    var mapOptions = {zoom: 15,center: myLatlng}
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    var marker = new google.maps.Marker({position: myLatlng,map: map});
+    //var markerr = new google.maps.Marker({position: myLatlng,map: map});
+	
+	//map.addListener('dblclick', function(e) {
+   // var marker = placeMarker(e.latLng, map);
+//});
+var onClick = map.addListener('click', function(e){
+      placeMarker(e.latLng, map);
+      google.maps.event.removeListener(onClick);
+   });
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Hello World!"
+  });
+
+google.maps.event.addListener(markerr, 'click', function() {
+  infowindow.open(map,markerr);
+  }); 
 }
+
+
 function onError(error) {
     alert('code: ' + error.code + '\n' +'message: ' + error.message + '\n');
 }
 
-
+function placeMarker(position, map) {
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map
+    });
+    map.panTo(position);
+}
 </script>
 <head>
  
