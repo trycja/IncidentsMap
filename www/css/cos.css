@@ -14,11 +14,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
-<<<<<<< HEAD
-time, mark, audio, video {
-=======
 time, mark, audio, video, #lian {
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
     margin: 0;
     padding: 0;
     border: 0;
@@ -46,8 +42,6 @@ q:before, q:after {
     content: '';
     content: none;
 }
-<<<<<<< HEAD
-=======
 
 hr.type_1 {
 border: 0;
@@ -58,7 +52,6 @@ background-repeat: no-repeat;
         width: 768px;
         margin: auto;
 }
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
  
 /* remember to highlight inserts somehow! */
 ins {
@@ -78,14 +71,11 @@ body {
     font: 16px/1.4em 'PT Sans', sans-serif;;
     color: #1c1c1c;
 }
-<<<<<<< HEAD
-=======
 
 nav{
 position:fixed;
 top:0;
 }
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
  
 p,
 ul {
@@ -115,39 +105,22 @@ h2 {
  
 /*layout*/
  
-<<<<<<< HEAD
-.wrapper {
-}
- 
-article {
-=======
 .header{
 	position: fixed;
 	top: 0;
 }
  
 article, #home {
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
     border-bottom: 1px solid #d8d8d8;
     padding: 10px 20px 0 20px;
     margin: 10px 0;
 }
-<<<<<<< HEAD
- 
-/*header*/
- 
-=======
 
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
 header {
     background: #1c1c1c;
     padding: 15px 20px;
 }
  
-<<<<<<< HEAD
-        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
-=======
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
         header:before,
         header:after {
             content:"";
@@ -198,11 +171,7 @@ a.to_nav:focus {
 }
 
 /*navigation*/ 
-<<<<<<< HEAD
- 
-=======
 
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
 #primary_nav ul {
     list-style: none;
     background: #1c1c1c;
@@ -240,11 +209,7 @@ a.to_nav:focus {
         display: none;
     }
      
-<<<<<<< HEAD
-    .wrapper {
-=======
     .wrapper{
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
         position: relative;
         width: 768px;
         margin: auto;
@@ -271,16 +236,7 @@ a.to_nav:focus {
     }
  
 }
-<<<<<<< HEAD
-#map-canvas { height: 100% }
 
- /* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-}
-=======
-
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -317,20 +273,8 @@ button:hover {
     opacity: 0.8;
 }
 
-<<<<<<< HEAD
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Add padding to containers */
-.container {
-=======
 /* Add padding to containers */
 .container, #lian {
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
     padding: 16px;
 }
 
@@ -340,11 +284,4 @@ button:hover {
         display: block;
         float: none;
     }
-<<<<<<< HEAD
-    .cancelbtn {
-        width: 100%;
-    }
 } 
-=======
-} 
->>>>>>> 87124c767ef7adb8e2a6396d3f177af8a9e7882b
