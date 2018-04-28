@@ -13,6 +13,25 @@
 		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 		<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     </config-file>
+    <allow-intent href="market:*" />
+    	<preference name="android-minSdkVersion" value="14" />
+    	<preference name="android-targetSdkVersion" value="22" />
+    	<preference name="SplashScreen" value="splash" />
+   		<preference name="SplashScreenDelay" value="3000" />
+  	 	<preference name="ShowSplashScreenSpinner" value="false" />
+  	 	<preference name="FadeSplashScreen" value="false" />
+  	 	<preference name="SplashMaintainAspectRatio" value="true" />
+  	 	<preference name="SplashShowOnlyFirstTime" value="false" />
+        <splash qualifier="land-mdpi" src="res/drawable-mdpi/splash.png" />
+        <splash qualifier="land-hdpi" src="res/drawable-hdpi/splash.png" />
+        <splash qualifier="land-xhdpi" src="res/drawable-xhdpi/splash.png" />
+        <splash qualifier="land-xxhdpi" src="res/drawable-xxhdpi/splash.png" />
+        <splash qualifier="land-xxxhdpi" src="res/drawable-xxxhdpi/splash.png" />
+        <splash qualifier="port-mdpi" src="res/drawable-mdpi/splash.png" />
+        <splash qualifier="port-hdpi" src="res/drawable-hdpi/splash.png" />
+        <splash qualifier="port-xhdpi" src="res/drawable-xhdpi/splash.png" />
+        <splash qualifier="port-xxhdpi" src="res/drawable-xxhdpi/splash.png" />
+        <splash qualifier="port-xxxhdpi" src="res/drawable-xxxhdpi/splash.png" />
 	</platform>
 
 	<plugin name="cordova-plugin-device" spec="~1.1.4" />
