@@ -17,11 +17,11 @@
     	<preference name="android-minSdkVersion" value="14" />
     	<preference name="android-targetSdkVersion" value="22" />
     	<preference name="SplashScreen" value="splash" />
-   	<preference name="SplashScreenDelay" value="3000" />
-  	<preference name="ShowSplashScreenSpinner" value="false" />
-  	<preference name="FadeSplashScreen" value="false" />
-  	<preference name="SplashMaintainAspectRatio" value="true" />
-  	<preference name="SplashShowOnlyFirstTime" value="false" />
+   		<preference name="SplashScreenDelay" value="3000" />
+  	 	<preference name="ShowSplashScreenSpinner" value="false" />
+  	 	<preference name="FadeSplashScreen" value="false" />
+  	 	<preference name="SplashMaintainAspectRatio" value="true" />
+  	 	<preference name="SplashShowOnlyFirstTime" value="false" />
         <splash qualifier="land-mdpi" src="www/res/drawable-mdpi/splash.png" />
         <splash qualifier="land-hdpi" src="www/res/drawable-hdpi/splash.png" />
         <splash qualifier="land-xhdpi" src="www/res/drawable-xhdpi/splash.png" />
@@ -32,6 +32,11 @@
         <splash qualifier="port-xhdpi" src="www/res/drawable-xhdpi/splash.png" />
         <splash qualifier="port-xxhdpi" src="www/res/drawable-xxhdpi/splash.png" />
         <splash qualifier="port-xxxhdpi" src="www/res/drawable-xxxhdpi/splash.png" />
+		<icon density="mdpi" src="www/res/drawable-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="www/res/drawable-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="www/res/drawable-xdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="www/res/drawable-xxhdpi/ic_launcher.png" />
+		<icon density="xxxhdpi" src="www/res/drawable-xxxhdpi/ic_launcher.png" />
 	</platform>
 
 	<plugin name="cordova-plugin-device" spec="~1.1.4" />
@@ -39,6 +44,5 @@
 	<plugin name="cordova-plugin-geolocation" version="2.1.0" />
 	<plugin name="cordova-plugin-whitelist" spec="1" />
 	<plugin name="cordova-plugin-firebase" spec="1.0.0" />
-	<plugin name="cordova-plugin-splashscreen" spec="5.0.2"/>
 
 </widget>
