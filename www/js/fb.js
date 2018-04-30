@@ -25,3 +25,21 @@ function funR() {
     window.location.href = "#login";
 	}});
 }
+
+function funL() {
+	var loginL = document.getElementById('loginL');
+	var pswL = document.getElementById('pswL');
+	
+	var email = loginL.value;
+    var password = pswL.value;
+	errorCode = "";
+	firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+        errorCode = error.code;
+        var errorMessage = error.message;
+        alert("Error: " + errorMessage);
+    }). then(function(en) {
+	if (errorCode == "") {
+	alert('Zalogowałeś się');
+	window.location.href = "#map";
+	}});
+}
