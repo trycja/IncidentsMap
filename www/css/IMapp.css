@@ -63,7 +63,7 @@ table {
 /*begin our styles*/
  
 body {
-    font: 16px/1.4em 'PT Sans', sans-serif;;
+    font: 16px/1.4em 'PT Sans', sans-serif;
     color: #1c1c1c;
 }
 
@@ -83,7 +83,7 @@ ul {
 }
  
 a {
-    color: #1D745A;
+	    color: #1D745A;
 }
  
 h1 {
@@ -175,7 +175,7 @@ a.to_nav:focus {
  
 #primary_nav li a:hover,
 #primary_nav li a:focus {
-    color: #1c1c1c;
+	color: #1c1c1c;
     background: #ccc;
 }
 
@@ -290,4 +290,54 @@ button:hover {
   width: 16px; 
   height: 16px; 
   background-image: url(Pillbuttonred_clip_art.svg); 
+}
+
+.buttonCall {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 20px;
+    border: 2px solid #9c1a1a;
+    border-radius: 15px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal bold 25px verdana;
+    color: #ffffff;
+    text-transform: uppercase
+}
+.buttonCall:hover {
+    border: 2px solid #fa2a2a;
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+    background: -moz-linear-gradient(top, #ff5959, #b62f2f);
+    background: linear-gradient(to bottom, #ff5959, #b62f2f);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.buttonCall:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
+    background: -moz-linear-gradient(top, #982727, #982727);
+    background: linear-gradient(to bottom, #982727, #982727);
+    text-transform: uppercase
+}
+.buttonCall:focus {
+    text-transform: uppercase
+}
+.buttonCall:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+    line-height: 24px;
+    margin: -10px 0px -10px -6px;
+    position: relative;
+    top: -8px;
+    left: -5px;
+    background: url("http://www.cityofkingsville.com/wp-content/uploads/2015/01/caution-152926_640.png?x37926") no-repeat left center transparent;
+    background-size: 100% 100%;
 }
