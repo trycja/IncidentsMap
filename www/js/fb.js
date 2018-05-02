@@ -9,13 +9,13 @@ function funR() {
 	alert(email + " " + pswd1 + " " + pswd2);
 	errorCode = "";
 
-	 if (pswd1 !== pswd2) {
+	if (pswd1 != pswd2) {
         alert('Hasła nie zgadzają się');
         return false;
     }
 
     firebase.auth().createUserWithEmailAndPassword(email, pswd1).catch(function (error) {
-        let errorCode = error.code;
+        errorCode = error.code;
         let errorMessage = error.message;
         alert("Error: " + errorMessage);
         return false;
