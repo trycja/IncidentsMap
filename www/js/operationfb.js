@@ -101,6 +101,56 @@ function readFb() {
 	});
 }
 
+function setMapOnAll(map) {
+    for (var i = 0; i < markers.length; i++) {
+		markers[i].setMap(map);
+	}
+}
+
+function showTypes() {
+	setMapOnAll(null);
+	var wy = document.getElementById("wy");
+	var st = document.getElementById("st"); 
+	var kr = document.getElementById("kr");
+	var na = document.getElementById("na");
+	var za = document.getElementById("za"); 
+	var mo = document.getElementById("mo");
+	
+	for(i = 0; i < incidents.length; i++){
+		if(wy.checked) {
+		if(incidents[i][3] == "Wypadek") {
+			markers[i].setMap(map);
+		}
+	}
+	if(st.checked) {
+		if(incidents[i][3] == "Stłuczka") {
+			markers[i].setMap(map);
+		}
+	}
+	
+	if(kr.checked) {
+		if(incidents[i][3] == "Kradzież") {
+			markers[i].setMap(map);
+		}
+	}
+	if(na.checked) {
+		if(incidents[i][3] == "Napaść") {
+			markers[i].setMap(map);
+		}
+	}
+	if(za.checked) {
+		if(incidents[i][3] == "Zaginięcie") {
+			markers[i].setMap(map);
+		}
+	}
+	if(mo.checked) {
+		if(incidents[i][3] == "Morderstwo") {
+			markers[i].setMap(map);
+		}
+	}
+}
+}
+
 var pinColorW = "4D2600"; //brazowy
 var pinImageW = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColorW,
     new google.maps.Size(21, 34),
