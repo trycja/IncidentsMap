@@ -19,7 +19,7 @@ function onSuccess(position) {
 	});
 
 	var onClick = map.addListener('mousedown', function(e) {
-    var marker = placeMarker(e.latLng, map);
+    var markerd = placeMarker(e.latLng, map);
       google.maps.event.removeListener(onClick);
    });
 }
@@ -40,14 +40,24 @@ function returnMap(){
 	return map;
 }
 
+var marker = "";
 function placeMarker(position, map) {
-    var marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
         position: position,
 		map: map
     });
-	marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+	marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green.png');
 	lat = marker.getPosition().lat();
 	lng = marker.getPosition().lng();
     map.panTo(position);
 	return marker;
+}
+
+function removeM() {
+	marker.setMap(null);
+	marker = "";
+	var onClick = map.addListener('mousedown', function(e) {
+    var markerd = placeMarker(e.latLng, map);
+      google.maps.event.removeListener(onClick);
+   });
 }
