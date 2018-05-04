@@ -20,3 +20,6 @@ https://kaavhi.github.io/IncidentsMap
 
 ## Link do systemu zarządzania projektem:
 https://trello.com/b/wdMFddhl/incidentsmap
+
+# Prototyp aplikacji:
+https://marvelapp.com/47b7bia
