@@ -5,6 +5,7 @@ function getLocation(){
 
 var lat = "";
 var lng = "";
+var map = "";
 
 function onSuccess(position) {
     var latGM=position.coords.latitude;
@@ -12,7 +13,10 @@ function onSuccess(position) {
     //Google Maps
     var myLatlng = new google.maps.LatLng(latGM,langGM);
     var mapOptions = {zoom: 15,center: myLatlng}
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
+	readFb();
+	});
 
 	var onClick = map.addListener('mousedown', function(e) {
     var marker = placeMarker(e.latLng, map);
@@ -32,12 +36,18 @@ function returnLng(){
 	return lng;
 }
 
+function returnMap(){
+	return map;
+}
+
 function placeMarker(position, map) {
     var marker = new google.maps.Marker({
         position: position,
-        map: map
+		map: map
     });
+	marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
 	lat = marker.getPosition().lat();
 	lng = marker.getPosition().lng();
     map.panTo(position);
+	return marker;
 }

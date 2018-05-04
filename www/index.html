@@ -17,6 +17,8 @@
     <script type="text/javascript" src="js/fb.js"></script>
 	<script type="text/javascript" src="js/operationfb.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	 <script> $( "#map-canvas" ).load(readFb()); </script>
     <script>
         var config = {
             apiKey: "AIzaSyDRrNOiRQLy472LRntX6OLgnHjr1w446uc",
@@ -94,7 +96,7 @@
 	
         <div id="map-canvas" style="width:100%;height:450px;"></div>
 		<div class="container" style="background-color:#f1f1f1">
-			<button id="del" class="button2" onclick='delM();'>Usuń znacznik</button>
+			<button id="del" class="button2" onclick='removeM();'>Usuń znacznik</button>
 			<label for="descr"><b>Opis</b></label>
             <input type="text" placeholder="Enter description" id="description" required>
 			<button id="add" class="button2" onclick='addIncident();'>Dodaj znacznik do bazy</button>
